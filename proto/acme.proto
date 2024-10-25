@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package acme;
+
+import "sf/ethereum/type/v2/type.proto";
+
+option go_package = "github.com/maoueh/showcase-buf-dependencies;pbacme";
+
+message Test {
+    sf.ethereum.type.v2.BigInt big_int = 1;
+}
